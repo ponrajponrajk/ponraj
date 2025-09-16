@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ponraj k | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    header {
+      background: #98a805;
+      color: #fff;
+      position: relative;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .hero {
+      background: #0077cc;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fff;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #0077cc;
+    }
+
+    .about,
+    .certificates,
+    .personal-details,
+    .contact {
+      background-color: #f4f4f4;
+    }
+
+    .projects .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #e0e0e0;
+      padding: 20px;
+      border-left: 5px solid #0077cc;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .btn-resume {
+      padding: 6px 12px;
+      background: #98a805;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .btn-resume:hover {
+      background-color: #005fa3;
+    }
+
+    .personal-details li strong {
+      display: inline-block;
+      width: 120px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #0077cc;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #333;
+      color: #f1f0f7;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background-color: #ec4abc;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        display: none;
+      }
+
+      nav ul.show {
+        display: flex;
+        padding: 20px;
+      }
+
+      .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        color: #fff;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">ponraj k</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" download class="btn-resume">Resume</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hi, I'm ponraj k</h2>
+  <p>Student</p>
+  <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<section id="about" class="about container">
+  <h2>About Me</h2>
+  <p>I am a student with a passion for creating beautiful and functional websites. I enjoy turning complex problems into simple, elegant solutions.</p>
+</section>
+
+<section id="education" class="education container">
+  <h2>Education & Qualifications</h2>
+  <ul>
+    <li><strong>B.Sc Computer Science</strong> - Madras University (2024 - 2027)</li>
+    <li><strong>High School</strong> - spk boys school (2022 - 2024)</li>
+  </ul>
+</section>
+
+<section id="certificates" class="certificates container">
+  <h2>Certificates</h2>
+  <ul>
+    <li>none</li>
+  </ul>
+</section>
+
+<section id="hobbies" class="hobbies container">
+  <h2>Hobbies</h2>
+  <p>Coding, Playing games, Traveling</p>
+</section>
+
+<section id="details" class="personal-details container">
+  <h2>Personal Details</h2>
+  <ul>
+    <li><strong>Name:</strong> ponraj k</li>
+    <li><strong>DOB:</strong> July 04, 2007</li>
+    <li><strong>Phone:</strong> +91-6384194149</li>
+    <li><strong>Email:</strong> ponrajkaniyapan@gmail.com</li>
+    <li><strong>Location:</strong> vedal, TN, India</li>
+  </ul>
+</section>
+
+<section id="projects" class="projects container">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Project One</h3>
+      <p>A short description of your project.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project Two</h3>
+      <p>A short description of your project.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact container">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <p id="formStatus"></p>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 ponraj k. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const status = document.getElementById("formStatus");
+    status.textContent = "Sending...";
+    setTimeout(() => {
+      status.textContent = "Thanks! I will get back to you soon.";
+      this.reset();
+    }, 1000);
+  });
+</script>
+
+</body>
+</html>
